@@ -7,7 +7,7 @@ import { Todo } from 'src/app/models/Todo.model';
   styleUrls: ['./todo-item.component.css']
 })
 export class TodoItemComponent implements OnInit {
-  @Input() todo: Todo = new Todo(0, '', '', false);
+  @Input() todo: Todo = new Todo(0, '', false);
   // @Output() deleteTodo: EventEmitter<Todo> = new EventEmitter();
 
   constructor() { }
