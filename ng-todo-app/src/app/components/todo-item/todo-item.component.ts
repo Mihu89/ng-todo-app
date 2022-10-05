@@ -15,11 +15,19 @@ export class TodoItemComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  onToggle(todo: Todo): void{
+  setClasses() {
+    let classes = {
+      item: true,
+      'is-completed': this.todo.completed
+    }
+    return classes;
+  }
+
+  onToggle(todo: Todo): void {
     todo.completed = !todo.completed;
   }
 
-  onDelete(todo: Todo){
+  onDelete(todo: Todo) {
 
   }
 }
