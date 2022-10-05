@@ -1,0 +1,8 @@
+<div>
+    <p>
+        <input type="checkbox" id="{{todo.id}}" (change)="onToggle(todo)"
+        [checked]="todo.completed">
+        <label for="{{todo.id}}"><b>{{todo.title}} - </b>{{todo.description}}</label>
+        <button (click)="onDelete(todo)" class="del">X</button>
+    </p>
+</div>
